@@ -58,7 +58,7 @@ export default function QuizQuestion({
       const signedMessage = await provider.getSigner().signMessage(message) 
 
       const payload: CheckAnswerPayload = {
-        address,
+    
         questionIndex,
         answerIndex,
         message,
